@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
+
+const sections = [
+  { title: 'Главная', url: '/' },
+  { title: 'Новости', url: '/news' },
+  { title: 'Политика', url: '/about' },
+  { title: 'Экономика', url: '/economy' },
+  { title: 'Регионы', url: '/regional' },
+  { title: 'Tech', url: '/tech' },
+  { title: 'Интервью', url: '/interviews' },
+  { title: 'Мнения', url: '/opinions' },
+  { title: 'Мир', url: '/world' },
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header title="Новости Израиля для Русскоговорящих" sections={sections} />
+      <div className="App">
+      </div>
+    </>
+
   );
 }
 
