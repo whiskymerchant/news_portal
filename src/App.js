@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './components/Header/Header';
+import MainFeaturedPost from './components/MainFeaturedPost/MainFeaturedPost';
 
 const sections = [
   { title: 'Главная', url: '/' },
@@ -13,10 +14,22 @@ const sections = [
   { title: 'Мир', url: '/world' },
 ];
 
+  const mainPost = {
+    title: 'Example Post',
+    description: 'This is an example post description',
+    image: './images/20240425_150733.jpg',
+    imageText: 'Image description',
+    linkText: 'Read more',
+  };
+
+
 function App() {
+
+
   return (
     <>
       <Header title="Новости Израиля для Русскоговорящих" sections={sections} />
+      <MainFeaturedPost post={mainPost} />
       <div className="App">
       </div>
     </>
