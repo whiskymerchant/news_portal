@@ -1,0 +1,6 @@
+.Toolbar {
+  display: flex;
+  margin: 10px 160px 10px 160px;
+  justify-content: space-between;
+  overflow-x: 'auto';
+}

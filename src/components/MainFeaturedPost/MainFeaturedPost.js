@@ -9,7 +9,6 @@ import Box from '@mui/material/Box';
 function MainFeaturedPost(props) {
   const { post } = props;
 
-  if (!post) {
   return (
     <Paper
       sx={{
@@ -58,7 +57,6 @@ function MainFeaturedPost(props) {
       </Grid>
     </Paper>
   );
-}
 }
 
 MainFeaturedPost.propTypes = {

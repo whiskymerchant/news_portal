@@ -6,15 +6,15 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import MainFeaturedPost from './components/MainFeaturedPost/MainFeaturedPost';
-import FeaturedPost from './components/FeaturedPost/FeaturedPost';
-import Main from './components/Main/Main';
-import Sidebar from './components/Sidebar/Sidebar';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
-import post1 from './Posts/blog-post.1.md';
-import post2 from './Posts/blog-post.2.md';
-import post3 from './Posts/blog-post.3.md';
+import Header from './Header';
+import MainFeaturedPost from './MainFeaturedPost';
+import FeaturedPost from './FeaturedPost';
+import Main from './Main';
+import Sidebar from './Sidebar';
+import Footer from './Footer';
+import post1 from '../../Posts/blog-post.1.md';
+import post2 from '../../Posts/blog-post.2.md';
+import post3 from '../../Posts/blog-post.3.md';
 
 const sections = [
   { title: 'Technology', url: '#' },
@@ -91,7 +91,7 @@ export default function Blog() {
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header title="Blog" sections={sections} />
+        <Header title="Israeli News" sections={sections} />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={4}>

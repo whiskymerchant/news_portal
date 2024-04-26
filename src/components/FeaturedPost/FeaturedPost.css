@@ -1,0 +1,22 @@
+.Card {
+  display: flex;
+  flex-direction: row;
+  max-width: 600px;
+  margin: 20px 160px 20px 160px;
+}
+
+.Content {
+  /* flex: 1; */
+}
+
+.Media {
+  width: 460px;
+  /* display: none; Hidden on extra small screens */
+}
+
+@media (min-width: 600px) {
+  /* Displayed on small screens and above */
+  .featured-post-media {
+    /* display: block; */
+  }
+}
